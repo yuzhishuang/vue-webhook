@@ -1,0 +1,41 @@
+Arguments: 
+  /Users/yzs/.nvm/versions/node/v11.14.0/bin/node /Users/yzs/.nvm/versions/node/v11.14.0/bin/yarn add nodemailer -S
+
+PATH: 
+  /usr/local/opt/php@7.1/sbin:/usr/local/opt/php@7.1/bin:/usr/local/opt/php@7.1/sbin:/usr/local/opt/php@7.1/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/libpq/bin:/usr/local/opt/curl-openssl/bin:/usr/local/opt/openldap/sbin:/usr/local/opt/openldap/bin:/usr/local/opt/apr-util/bin:/usr/local/opt/openssl/bin:/usr/local/opt/openssl/bin:/usr/local/opt/apr/bin:/usr/local/opt/php@7.1/sbin:/usr/local/opt/php@7.1/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/libpq/bin:/usr/local/opt/curl-openssl/bin:/usr/local/opt/openldap/sbin:/usr/local/opt/openldap/bin:/usr/local/opt/apr-util/bin:/usr/local/opt/openssl/bin:/usr/local/opt/apr/bin:/usr/local/opt/php@7.1/sbin:/usr/local/opt/php@7.1/bin:/Users/yzs/.nvm/versions/node/v11.14.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  11.14.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND npm.xesv5.com npm.xesv5.com:80
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:58:26)
+
+npm manifest: 
+  {
+    "name": "vue-webhook",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "nodemailer": "^6.3.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
