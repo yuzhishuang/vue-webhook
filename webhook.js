@@ -2,7 +2,7 @@ let http = require('http');
 let crypto = require('crypto');
 var spawn = require('child_process').spawn;
 let sendMail = require('./sendMail');
-const SECRET = '123456';
+const SECRET = 'yuzhishuang';
 function sign (data) {
   return 'sha1=' + crypto.createHmac('sha1', SECRET).update(data).digest('hex')
 }
