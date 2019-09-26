@@ -17,13 +17,19 @@ let server = http.createServer(function(req,res){
     req.on('end',function(){
       console.log('end----end')
       let body = Buffer.concat(buffers);
+      console.log(1)
       let sig   = req.headers['x-hub-signature'];
+      console.log(2)
       let event = req.headers['x-github-event'];
+      console.log(3)
       if(sig !== sign(body)){
         return res.end('Not Allowed');
       }
+      console.log(4)
       res.setHeader('Content-Type','application/json');
+      console.log(5)
       res.end(JSON.stringify({"ok":true}));
+      console.log(6)
       //===========分割线===================
       console.log(event, 'event')
       if(event === 'push'){
