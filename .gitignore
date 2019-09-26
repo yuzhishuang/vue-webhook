@@ -3,3 +3,5 @@ node_modules
 package-lock.json
 .dockerignore
 .idea
+yarn.lock
+yarn-error.log
