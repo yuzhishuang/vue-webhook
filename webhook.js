@@ -23,6 +23,7 @@ let server = http.createServer(function(req,res){
       let event = req.headers['x-github-event'];
       console.log(3)
       if(sig !== sign(body)){
+        console.log('-------')
         return res.end('Not Allowed');
       }
       console.log(4)
