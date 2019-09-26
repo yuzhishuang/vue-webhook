@@ -11,13 +11,14 @@ let server = http.createServer(function(req,res){
   if(req.url == '/webhook' && req.method =='POST'){
     let buffers = []; 
     req.on('data',function(data){
+      console.log('on---on')
       buffers.push(data);
     });
     req.on('end',function(){
+      console.log('end----end')
       let body = Buffer.concat(buffers);
       let sig   = req.headers['x-hub-signature'];
       let event = req.headers['x-github-event'];
-      let id    = req.headers['x-github-delivery'];
       if(sig !== sign(body)){
         return res.end('Not Allowed');
       }
