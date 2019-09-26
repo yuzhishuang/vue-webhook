@@ -25,7 +25,7 @@ let server = http.createServer(function(req,res){
       res.end(JSON.stringify({"ok":true}));
       //===========分割线===================
       if(event === 'push'){
-        console.log(body, '---')
+        console.log(body.toString(), '---')
         let payload = JSON.parse(body);
         let child = spawn('sh', [`./${payload.repository.name}.sh`]);
         let buffers = [];
